@@ -155,18 +155,18 @@ export function SideBar(props: { className?: string }) {
         transition: isMobileScreen && isIOSMobile ? "none" : undefined,
       }}
     >
-      <div className={styles["sidebar-header"]} data-tauri-drag-region>
+      {/* <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
           ChatGPT Next
         </div>
         <div className={styles["sidebar-sub-title"]}>
           Build your own AI assistant.
         </div>
-        {/* <div className={styles["sidebar-logo"] + " no-dark"}>
+        <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
-        </div> */}
-      </div>
-
+        </div>
+      </div> */}
+{/* 
       <div className={styles["sidebar-header-bar"]}>
         <IconButton
           icon={<MaskIcon />}
@@ -188,7 +188,7 @@ export function SideBar(props: { className?: string }) {
           onClick={() => showToast(Locale.WIP)}
           shadow
         />
-      </div>
+      </div> */}
 
       <div
         className={styles["sidebar-body"]}
