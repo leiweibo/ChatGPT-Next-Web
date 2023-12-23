@@ -437,6 +437,7 @@ export function ChatActions(props: {
     [allModels],
   );
   const [showModelSelector, setShowModelSelector] = useState(false);
+  const [showRobotIcon, setShowRobotIcon] = useState(false)
 
   useEffect(() => {
     // if current model is not available
@@ -519,12 +520,14 @@ export function ChatActions(props: {
           });
         }}
       />
-
-      <ChatAction
+      {showRobotIcon && (
+        <ChatAction
         onClick={() => setShowModelSelector(true)}
         text={currentModel}
         icon={<RobotIcon />}
       />
+      )}
+      
 
       {showModelSelector && (
         <Selector
